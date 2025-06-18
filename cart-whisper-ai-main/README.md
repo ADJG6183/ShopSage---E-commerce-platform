@@ -1,73 +1,97 @@
-# Welcome to your Lovable project
+# 🛒 ShopSage – AI-Powered E-commerce Platform
 
-## Project info
+**ShopSage** is an intelligent e-commerce engine designed to personalize the online shopping experience. Using AI-driven recommendations, behavior analysis, and dynamic product listings, ShopSage helps customers discover what they truly want — faster.
 
-**URL**: https://lovable.dev/projects/ddde0f59-b3e2-4b11-9bc0-85464aa79d81
+---
 
-## How can I edit this code?
+## 🚀 Features
 
-There are several ways of editing your application.
+- 🔍 **AI-Powered Recommendations**: Tailored product suggestions using NLP and user behavior
+- 🛍️ **Smart Product Discovery**: Dynamic search and filter suggestions based on context and preference
+- 🧠 **User Learning Engine**: Tracks clicks, purchases, and bounce rates to adapt product ranking
+- 📊 **Admin Analytics Dashboard**: Insights on product performance, conversion funnels, and user flow
+- 📦 **Full E-Commerce Stack**: Cart, checkout, order tracking, and inventory management
 
-**Use Lovable**
+---
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/ddde0f59-b3e2-4b11-9bc0-85464aa79d81) and start prompting.
+## 🧰 Tech Stack
 
-Changes made via Lovable will be committed automatically to this repo.
+| Layer        | Technology                             |
+|--------------|-----------------------------------------|
+| **Frontend** | React.js, Tailwind CSS, Chart.js        |
+| **Backend**  | Python, FastAPI                         |
+| **AI Models**| Hugging Face Transformers (T5/BERT), scikit-learn |
+| **Database** | PostgreSQL                              |
+| **Storage**  | AWS S3 / Firebase Storage               |
+| **Deployment**| Docker, Render (backend), Vercel (frontend) |
 
-**Use your preferred IDE**
+---
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## 📂 Folder Structure (MVP)
+```
+shopsage/
+├── backend/
+│   ├── app/
+│   │   ├── api/           # API endpoints
+│   │   ├── models/        # DB models
+│   │   ├── services/      # Recommendation logic
+│   │   └── main.py        # FastAPI app entry
+│   └── requirements.txt
+├── frontend/
+│   ├── src/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   └── App.jsx
+│   └── tailwind.config.js
+├── models/                # Trained recommendation models
+├── README.md
+└── docker-compose.yml
+```
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+---
 
-Follow these steps:
+## 📦 Getting Started
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+### Prerequisites:
+- Python 3.8+
+- Node.js 16+
+- Docker (optional for containerized dev)
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+### Setup Backend
+```bash
+cd backend
+python -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+uvicorn app.main:app --reload
+```
 
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+### Setup Frontend
+```bash
+cd frontend
+npm install
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+---
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## 🧪 Coming Soon
+- A/B testing for recommendation effectiveness
+- Loyalty/reward system
+- Shopify plugin integration
 
-**Use GitHub Codespaces**
+---
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## 📜 License
+MIT License. See `LICENSE` file for details.
 
-## What technologies are used for this project?
+---
 
-This project is built with:
+## 🙌 Contributing
+Pull requests welcome! Please submit issues for bugs or feature requests. See `CONTRIBUTING.md` for guidelines.
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+---
 
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/ddde0f59-b3e2-4b11-9bc0-85464aa79d81) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+## 👨‍💻 Author
+**Aaron Green** – [GitHub](https://github.com/ADJG6183)  
+Made with ❤️ for smarter online shopping.
